@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-data-warehouse",
-  "version": "1.0.0",
-  "description": "Data Warehouse Explorer — Read-only Snowflake/BigQuery/Redshift/Databricks querying with cost estimation",
+  "version": "1.0.1",
+  "description": "Data Warehouse Explorer \u2014 Read-only Snowflake/BigQuery/Redshift/Databricks querying with cost estimation",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,9 +9,16 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-data-warehouse",
   "homepage": "https://cortexprism.io/marketplace/plugins/data-warehouse",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "dw_query", "description": "Execute read-only analytical query", "params": [] },
+    {
+      "name": "dw_query",
+      "description": "Execute read-only analytical query",
+      "params": []
+    },
     {
       "name": "dw_explore_schema",
       "description": "Explore database and table schemas",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
